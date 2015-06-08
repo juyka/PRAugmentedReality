@@ -42,9 +42,9 @@
     NSNumber *distance;
     
     // Overlay View Objects
-    IBOutlet UILabel *titleL;
-    IBOutlet UILabel *distanceL;
 }
+@property (nonatomic) IBOutlet UIButton *titleL;
+@property (nonatomic) IBOutlet UILabel *distanceL;
 
 @property (nonatomic, strong) NSString *arTitle;
 @property (nonatomic, strong) NSNumber *distance;

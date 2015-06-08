@@ -50,9 +50,18 @@ static dispatch_once_t onceToken;
     [[arOverlaysContainerView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     for (NSNumber *ar_id in arObjectsDict.allKeys) {
-        [arOverlaysContainerView addSubview:[arObjectsDict[ar_id] view]];
+        ARObject *tag = arObjectsDict[ar_id];
+        tag.titleL.tag = tag.view.tag;
+        [tag.titleL addTarget:self action:@selector(tagWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [arOverlaysContainerView addSubview:tag.view];
+        
     }
 }
+
+- (void)tagWasTapped:(UIButton *)sender {
+    [self.delegate prarDidTapTag:@(sender.tag)];
+}
+
 -(void)setupRadar
 {
     NSArray *spots = [arController createRadarSpots];

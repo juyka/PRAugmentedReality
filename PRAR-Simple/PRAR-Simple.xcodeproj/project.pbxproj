@@ -15,11 +15,6 @@
 		36CB213418E480E7000483F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB213318E480E7000483F2 /* AppDelegate.m */; };
 		36CB213718E480E7000483F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CB213518E480E7000483F2 /* Main.storyboard */; };
 		36CB213A18E480E8000483F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB213918E480E7000483F2 /* ViewController.m */; };
-		36CB214318E480E8000483F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB214218E480E8000483F2 /* XCTest.framework */; };
-		36CB214418E480E8000483F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB212318E480E7000483F2 /* Foundation.framework */; };
-		36CB214518E480E8000483F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB212718E480E7000483F2 /* UIKit.framework */; };
-		36CB214D18E480E8000483F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36CB214B18E480E8000483F2 /* InfoPlist.strings */; };
-		36CB214F18E480E8000483F2 /* PRAR_SimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB214E18E480E8000483F2 /* PRAR_SimpleTests.m */; };
 		36CB216418E48338000483F2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216318E48338000483F2 /* Media.xcassets */; };
 		36CB216C18E483C6000483F2 /* logo29.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216518E483C6000483F2 /* logo29.png */; };
 		36CB216D18E483C6000483F2 /* logo40.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216618E483C6000483F2 /* logo40.png */; };
@@ -44,17 +39,11 @@
 		36CB21A818E49992000483F2 /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219A18E49992000483F2 /* ARRadar.xib */; };
 		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
+		6AC29CBB1B25DE080023F0F4 /* scheme_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */; };
+		6AC29CBD1B25DE1E0023F0F4 /* scheme_labelContainerBody@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody@2x.png */; };
+		6AC29CBF1B25DE2A0023F0F4 /* scheme_labelContainerBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom@2x.png */; };
+		6AC29CC11B25DE320023F0F4 /* scheme_labelContainerTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		36CB214618E480E8000483F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36CB211818E480E7000483F2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36CB211F18E480E7000483F2;
-			remoteInfo = "PRAR-Simple";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36CB212018E480E7000483F2 /* PRAR-Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRAR-Simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,11 +59,7 @@
 		36CB213618E480E7000483F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36CB213818E480E7000483F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36CB213918E480E7000483F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRAR-SimpleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CB214218E480E8000483F2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		36CB214A18E480E8000483F2 /* PRAR-SimpleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRAR-SimpleTests-Info.plist"; sourceTree = "<group>"; };
-		36CB214C18E480E8000483F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36CB214E18E480E8000483F2 /* PRAR_SimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAR_SimpleTests.m; sourceTree = "<group>"; };
 		36CB216318E48338000483F2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		36CB216518E483C6000483F2 /* logo29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo29.png; sourceTree = "<group>"; };
 		36CB216618E483C6000483F2 /* logo40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo40.png; sourceTree = "<group>"; };
@@ -105,6 +90,10 @@
 		36CB219C18E49992000483F2 /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
 		36CB219D18E49992000483F2 /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
 		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
+		6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheme_arrow@2x.png"; sourceTree = "<group>"; };
+		6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheme_labelContainerBody@2x.png"; sourceTree = "<group>"; };
+		6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheme_labelContainerBottom@2x.png"; sourceTree = "<group>"; };
+		6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheme_labelContainerTop@2x.png"; sourceTree = "<group>"; };
 		CB23E47C42D742E9A50498CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,16 +108,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36CB213E18E480E8000483F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36CB214318E480E8000483F2 /* XCTest.framework in Frameworks */,
-				36CB214518E480E8000483F2 /* UIKit.framework in Frameworks */,
-				36CB214418E480E8000483F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,7 +116,6 @@
 			children = (
 				36CB215818E481B2000483F2 /* Graphics */,
 				36CB212918E480E7000483F2 /* PRAR-Simple */,
-				36CB214818E480E8000483F2 /* PRAR-SimpleTests */,
 				36CB212218E480E7000483F2 /* Frameworks */,
 				36CB212118E480E7000483F2 /* Products */,
 			);
@@ -147,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				36CB212018E480E7000483F2 /* PRAR-Simple.app */,
-				36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,24 +163,6 @@
 				36CB212C18E480E7000483F2 /* InfoPlist.strings */,
 				36CB212F18E480E7000483F2 /* main.m */,
 				36CB213118E480E7000483F2 /* PRAR-Simple-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		36CB214818E480E8000483F2 /* PRAR-SimpleTests */ = {
-			isa = PBXGroup;
-			children = (
-				36CB214E18E480E8000483F2 /* PRAR_SimpleTests.m */,
-				36CB214918E480E8000483F2 /* Supporting Files */,
-			);
-			path = "PRAR-SimpleTests";
-			sourceTree = "<group>";
-		};
-		36CB214918E480E8000483F2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36CB214A18E480E8000483F2 /* PRAR-SimpleTests-Info.plist */,
-				36CB214B18E480E8000483F2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -255,6 +214,10 @@
 		36CB219118E49992000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop@2x.png */,
+				6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom@2x.png */,
+				6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody@2x.png */,
+				6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */,
 				36CB219218E49992000483F2 /* ar_icon.png */,
 				36CB219318E49992000483F2 /* ar_overlay.png */,
 				36CB219418E49992000483F2 /* ar_overlay@2x.png */,
@@ -296,24 +259,6 @@
 			productReference = 36CB212018E480E7000483F2 /* PRAR-Simple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36CB214018E480E8000483F2 /* PRAR-SimpleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-SimpleTests" */;
-			buildPhases = (
-				36CB213D18E480E8000483F2 /* Sources */,
-				36CB213E18E480E8000483F2 /* Frameworks */,
-				36CB213F18E480E8000483F2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				36CB214718E480E8000483F2 /* PBXTargetDependency */,
-			);
-			name = "PRAR-SimpleTests";
-			productName = "PRAR-SimpleTests";
-			productReference = 36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -322,11 +267,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GeoffroyLesage;
-				TargetAttributes = {
-					36CB214018E480E8000483F2 = {
-						TestTargetID = 36CB211F18E480E7000483F2;
-					};
-				};
 			};
 			buildConfigurationList = 36CB211B18E480E7000483F2 /* Build configuration list for PBXProject "PRAR-Simple" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,7 +282,6 @@
 			projectRoot = "";
 			targets = (
 				36CB211F18E480E7000483F2 /* PRAR-Simple */,
-				36CB214018E480E8000483F2 /* PRAR-SimpleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,9 +293,11 @@
 			files = (
 				36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */,
 				36CB218318E4861B000483F2 /* launch.png in Resources */,
+				6AC29CBD1B25DE1E0023F0F4 /* scheme_labelContainerBody@2x.png in Resources */,
 				36CB217A18E48447000483F2 /* logo114.png in Resources */,
 				36CB217B18E48447000483F2 /* logo120.png in Resources */,
 				36CB216F18E483C6000483F2 /* logo57.png in Resources */,
+				6AC29CBB1B25DE080023F0F4 /* scheme_arrow@2x.png in Resources */,
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
 				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
 				36CB217818E48447000483F2 /* logo58.png in Resources */,
@@ -365,22 +306,16 @@
 				36CB217918E48447000483F2 /* logo80.png in Resources */,
 				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
 				36CB21A118E49992000483F2 /* ARObject.xib in Resources */,
+				6AC29CBF1B25DE2A0023F0F4 /* scheme_labelContainerBottom@2x.png in Resources */,
 				36CB217018E483C6000483F2 /* logo60.png in Resources */,
 				36CB216418E48338000483F2 /* Media.xcassets in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				36CB21A518E49992000483F2 /* Radar.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
+				6AC29CC11B25DE320023F0F4 /* scheme_labelContainerTop@2x.png in Resources */,
 				36CB21A318E49992000483F2 /* ar_overlay.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
 				36CB21A618E49992000483F2 /* RadarMV.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36CB213F18E480E8000483F2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36CB214D18E480E8000483F2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,23 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36CB213D18E480E8000483F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36CB214F18E480E8000483F2 /* PRAR_SimpleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		36CB214718E480E8000483F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36CB211F18E480E7000483F2 /* PRAR-Simple */;
-			targetProxy = 36CB214618E480E8000483F2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36CB212C18E480E7000483F2 /* InfoPlist.strings */ = {
@@ -435,14 +354,6 @@
 				36CB213618E480E7000483F2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		36CB214B18E480E8000483F2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36CB214C18E480E8000483F2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -544,46 +455,6 @@
 			};
 			name = Release;
 		};
-		36CB215618E480E8000483F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PRAR-Simple.app/PRAR-Simple";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PRAR-SimpleTests/PRAR-SimpleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		36CB215718E480E8000483F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PRAR-Simple.app/PRAR-Simple";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
-				INFOPLIST_FILE = "PRAR-SimpleTests/PRAR-SimpleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,15 +472,6 @@
 			buildConfigurations = (
 				36CB215318E480E8000483F2 /* Debug */,
 				36CB215418E480E8000483F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-SimpleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36CB215618E480E8000483F2 /* Debug */,
-				36CB215718E480E8000483F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

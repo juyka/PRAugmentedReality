@@ -52,6 +52,8 @@
 
 - (void)prarGotProblem:(NSString*)problemTitle withDetails:(NSString*)problemDetails;
 
+- (void)prarDidTapTag:(NSNumber *)objectID;
+
 @end
 
 @interface PRARManager : NSObject

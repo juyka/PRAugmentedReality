@@ -571,11 +571,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 762233081DD540489E511D03 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Example/PRAR-Example-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Example/PRAR-Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2D3ECB70-0561-4B27-8563-0AC2AE89E303";
 				WRAPPER_EXTENSION = app;
@@ -586,11 +586,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 762233081DD540489E511D03 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Example/PRAR-Example-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Example/PRAR-Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2D3ECB70-0561-4B27-8563-0AC2AE89E303";
 				WRAPPER_EXTENSION = app;

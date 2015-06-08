@@ -57,6 +57,10 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
     return self;
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+}
+
 -(double)calculateDistanceFrom:(CLLocationCoordinate2D)user_loc_coord
 {
     CLLocationCoordinate2D object_loc_coord = CLLocationCoordinate2DMake(lat, lon);
@@ -71,8 +75,8 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
 -(NSString*)getDistanceLabelText
 {
     if (distance.doubleValue > POINT_ONE_MILE_METERS)
-         return [NSString stringWithFormat:@"%.2f mi", distance.doubleValue*METERS_TO_MILES];
-    else return [NSString stringWithFormat:@"%.0f ft", distance.doubleValue*METERS_TO_FEET];
+         return [NSString stringWithFormat:@"%.2f м.", distance.doubleValue];
+    else return [NSString stringWithFormat:@"%.0f ft", distance.doubleValue];
 }
 
 - (NSDictionary*)getARObjectData
@@ -91,9 +95,9 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
 {
     [super viewDidAppear:animated];
     
-    [titleL setText:arTitle];
+    [self.titleL setTitle:arTitle forState:UIControlStateNormal];
     
-    [distanceL setText:[self getDistanceLabelText]];
+    [self.distanceL setText:[self getDistanceLabelText]];
 }
 
 
