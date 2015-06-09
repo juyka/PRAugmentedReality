@@ -64,8 +64,11 @@ static dispatch_once_t onceToken;
     }
 }
 
-- (void)tagWasTapped:(UIButton *)sender {
-    [self.delegate prarDidTapTag:@(sender.tag)];
+- (void)tagWasTapped:(UITapGestureRecognizer *)sender {
+
+    ARObject *arObj = arObjects.firstObject;
+    NSLog(@"%@", arObj.view.gestureRecognizers);
+    [self.delegate prarDidTapTag:@(sender.view.tag)];
 }
 
 -(void)setupRadar
