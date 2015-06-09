@@ -104,8 +104,8 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
 #pragma mark -- OO Methods
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"ARObject %d - %@ - lat: %f - lon: %f - distance: %@",
-            arId, arTitle, lat, lon, distance];
+    return [NSString stringWithFormat:@"ARObject %d - %@ - lat: %f - lon: %f - distance: %@ gesture: %@",
+            arId, arTitle, lat, lon, distance, self.view.gestureRecognizers];
 }
 
 @end

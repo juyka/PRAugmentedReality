@@ -37,7 +37,9 @@
 @end
 
 
-@implementation PRARManager
+@implementation PRARManager {
+    NSMutableArray *arObjects;
+}
 
 static PRARManager * _sharedManager = nil;
 static dispatch_once_t onceToken;
@@ -47,12 +49,16 @@ static dispatch_once_t onceToken;
 
 -(void)setupAROverlaysWithData:(NSDictionary*)arObjectsDict
 {
+    arObjects = NSMutableArray.new;
     [[arOverlaysContainerView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
     
     for (NSNumber *ar_id in arObjectsDict.allKeys) {
         ARObject *tag = arObjectsDict[ar_id];
+        [arObjects addObject:tag];
         tag.titleL.tag = tag.view.tag;
-        [tag.titleL addTarget:self action:@selector(tagWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tagWasTapped:)];
+        [tag.view addGestureRecognizer:recognizer];
         [arOverlaysContainerView addSubview:tag.view];
         
     }
