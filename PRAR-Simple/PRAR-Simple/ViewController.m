@@ -55,17 +55,43 @@
 // Creates data for `NUMBER_OF_POINTS` AR Objects
 -(NSArray*)getDummyData
 {
-    NSMutableArray *points = [NSMutableArray arrayWithCapacity:NUMBER_OF_POINTS];
-    
-    srand48(time(0));
-    for (int i=0; i<NUMBER_OF_POINTS; i++)
-    {
-        CLLocationCoordinate2D pointCoordinates = [self getRandomLocation];
-        NSDictionary *point = [self createPointWithId:i at:pointCoordinates];
-        [points addObject:point];
-    }
-    
-    return [NSArray arrayWithArray:points];
+    NSArray *arData = @[@{
+                            @"id": @(0),
+                            @"title": @"Цирк",
+                            @"lat": @(55.853147),
+                            @"lon": @(37.491674)
+                            },
+                        @{
+                            @"id": @(1),
+                            @"title": @"Столовка",
+                            @"lat": @(55.850959),
+                            @"lon": @(37.494989)
+                            },
+                        @{
+                            @"id": @(2),
+                            @"title": @"Магаз",
+                            @"lat": @(55.850604),
+                            @"lon": @(37.492006)
+                            },
+                        @{
+                            @"id": @(3),
+                            @"title": @"Соседний офес",
+                            @"lat": @(55.852073),
+                            @"lon": @(37.493713)
+                            }
+                        ];
+    return arData;
+//    NSMutableArray *points = [NSMutableArray arrayWithCapacity:NUMBER_OF_POINTS];
+//    
+//    srand48(time(0));
+//    for (int i=0; i<NUMBER_OF_POINTS; i++)
+//    {
+//        CLLocationCoordinate2D pointCoordinates = [self getRandomLocation];
+//        NSDictionary *point = [self createPointWithId:i at:pointCoordinates];
+//        [points addObject:point];
+//    }
+//    
+//    return [NSArray arrayWithArray:points];
 }
 
 // Returns a random location
