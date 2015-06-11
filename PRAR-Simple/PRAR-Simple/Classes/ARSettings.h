@@ -24,10 +24,6 @@
 // THE SOFTWARE.
 //
 
-
-#define REFRESH_RATE            0.01    // 100hz
-#define RADAR_ON                YES
-
 /**
  * MAX_NUMBER_OF_TRIES
  *
@@ -42,11 +38,6 @@
 // -- Accelerometer -- //
 
 #define kFilteringFactor        0.05    // Filtering of noise for the accelerometer
-
-
-// -- Overlays & Container View -- //
-
-#define AR_VIEW_TAG             042313  // Random number to tag the view that contains the overlays with
 
 /**
  * VERTICAL_SENS

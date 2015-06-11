@@ -1,5 +1,5 @@
 //
-//  ARObject.h
+//  LocationMath.h
 //  PrometAR
 //
 // Created by Geoffroy Lesage on 4/24/13.
@@ -24,36 +24,36 @@
 // THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "ARSettings.h"
+@class AROverlayView;
 
-
-@interface ARObject : UIViewController
+@interface LocationMath : NSObject <CLLocationManagerDelegate>
 {
+    // Major variables
+    float currentHeading;
+    float currentInclination;
     
-    // ARObject main components
-    NSString *arTitle;
+    CLLocationCoordinate2D location;
     
-    int arId;
-    double lat;
-    double lon;
-    NSNumber *distance;
+    // Others
+    float rollingZ;
+    float rollingX;
     
-    // Overlay View Objects
+    float rollingZ2;
+    float rollingX2;
+    
+    float deviceViewHeight;
 }
-@property (nonatomic) IBOutlet UIButton *titleL;
-@property (nonatomic) IBOutlet UILabel *distanceL;
+- (id)init;
 
-@property (nonatomic, strong) NSString *arTitle;
-@property (nonatomic, strong) NSNumber *distance;
+- (void)startTrackingWithLocation:(CLLocationCoordinate2D)location andSize:(CGSize)deviceScreenSize;
+- (void)stopTracking;
 
-- (id)initWithId:(int)newId
-           title:(NSString*)newTitle
-     coordinates:(CLLocationCoordinate2D)newCoordinates
-andCurrentLocation:(CLLocationCoordinate2D)currLoc;
+- (CGRect)getCurrentFramePosition;
+- (int)getCurrentHeading;
 
-- (NSDictionary*)getARObjectData;
+- (int)getARObjectXPosition:(AROverlayView*)arObject;
 
 @end

@@ -27,22 +27,17 @@
 		36CB218318E4861B000483F2 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218118E4861B000483F2 /* launch.png */; };
 		36CB218418E4861B000483F2 /* launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218218E4861B000483F2 /* launchR4.png */; };
 		36CB218618E490B8000483F2 /* LoadingBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218518E490B8000483F2 /* LoadingBack.png */; };
-		36CB219F18E49992000483F2 /* ARController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB218C18E49992000483F2 /* ARController.m */; };
-		36CB21A018E49992000483F2 /* ARObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB218E18E49992000483F2 /* ARObject.m */; };
-		36CB21A118E49992000483F2 /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218F18E49992000483F2 /* ARObject.xib */; };
-		36CB21A218E49992000483F2 /* ar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219218E49992000483F2 /* ar_icon.png */; };
-		36CB21A318E49992000483F2 /* ar_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219318E49992000483F2 /* ar_overlay.png */; };
-		36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219418E49992000483F2 /* ar_overlay@2x.png */; };
-		36CB21A518E49992000483F2 /* Radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219518E49992000483F2 /* Radar.png */; };
-		36CB21A618E49992000483F2 /* RadarMV.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219618E49992000483F2 /* RadarMV.png */; };
-		36CB21A718E49992000483F2 /* ARRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219918E49992000483F2 /* ARRadar.m */; };
-		36CB21A818E49992000483F2 /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219A18E49992000483F2 /* ARRadar.xib */; };
-		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
-		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
-		6AC29CBB1B25DE080023F0F4 /* scheme_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */; };
-		6AC29CBD1B25DE1E0023F0F4 /* scheme_labelContainerBody.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody.png */; };
-		6AC29CBF1B25DE2A0023F0F4 /* scheme_labelContainerBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom.png */; };
-		6AC29CC11B25DE320023F0F4 /* scheme_labelContainerTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop.png */; };
+		6ACD588B1B298E9E00FF454C /* ARController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD58791B298E9E00FF454C /* ARController.m */; };
+		6ACD588C1B298E9E00FF454C /* AROverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD587B1B298E9E00FF454C /* AROverlayView.m */; };
+		6ACD588D1B298E9E00FF454C /* ar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD587E1B298E9E00FF454C /* ar_icon.png */; };
+		6ACD588E1B298E9E00FF454C /* ar_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD587F1B298E9E00FF454C /* ar_overlay.png */; };
+		6ACD588F1B298E9E00FF454C /* ar_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD58801B298E9E00FF454C /* ar_overlay@2x.png */; };
+		6ACD58901B298E9E00FF454C /* Radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD58811B298E9E00FF454C /* Radar.png */; };
+		6ACD58911B298E9E00FF454C /* RadarMV.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD58821B298E9E00FF454C /* RadarMV.png */; };
+		6ACD58921B298E9E00FF454C /* ARRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD58851B298E9E00FF454C /* ARRadar.m */; };
+		6ACD58931B298E9E00FF454C /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD58861B298E9E00FF454C /* ARRadar.xib */; };
+		6ACD58941B298E9E00FF454C /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD58881B298E9E00FF454C /* LocationMath.m */; };
+		6ACD58951B298E9E00FF454C /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD588A1B298E9E00FF454C /* PRARManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,28 +67,23 @@
 		36CB218118E4861B000483F2 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		36CB218218E4861B000483F2 /* launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchR4.png; sourceTree = "<group>"; };
 		36CB218518E490B8000483F2 /* LoadingBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingBack.png; sourceTree = "<group>"; };
-		36CB218B18E49992000483F2 /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
-		36CB218C18E49992000483F2 /* ARController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARController.m; sourceTree = "<group>"; };
-		36CB218D18E49992000483F2 /* ARObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARObject.h; sourceTree = "<group>"; };
-		36CB218E18E49992000483F2 /* ARObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARObject.m; sourceTree = "<group>"; };
-		36CB218F18E49992000483F2 /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
-		36CB219018E49992000483F2 /* ARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSettings.h; sourceTree = "<group>"; };
-		36CB219218E49992000483F2 /* ar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_icon.png; sourceTree = "<group>"; };
-		36CB219318E49992000483F2 /* ar_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay.png; sourceTree = "<group>"; };
-		36CB219418E49992000483F2 /* ar_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ar_overlay@2x.png"; sourceTree = "<group>"; };
-		36CB219518E49992000483F2 /* Radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radar.png; sourceTree = "<group>"; };
-		36CB219618E49992000483F2 /* RadarMV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RadarMV.png; sourceTree = "<group>"; };
-		36CB219818E49992000483F2 /* ARRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRadar.h; sourceTree = "<group>"; };
-		36CB219918E49992000483F2 /* ARRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRadar.m; sourceTree = "<group>"; };
-		36CB219A18E49992000483F2 /* ARRadar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARRadar.xib; sourceTree = "<group>"; };
-		36CB219B18E49992000483F2 /* LocationMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMath.h; sourceTree = "<group>"; };
-		36CB219C18E49992000483F2 /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
-		36CB219D18E49992000483F2 /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
-		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
-		6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheme_arrow@2x.png"; sourceTree = "<group>"; };
-		6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheme_labelContainerBody.png; sourceTree = "<group>"; };
-		6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheme_labelContainerBottom.png; sourceTree = "<group>"; };
-		6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheme_labelContainerTop.png; sourceTree = "<group>"; };
+		6ACD58781B298E9E00FF454C /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+		6ACD58791B298E9E00FF454C /* ARController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARController.m; sourceTree = "<group>"; };
+		6ACD587A1B298E9E00FF454C /* AROverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AROverlayView.h; sourceTree = "<group>"; };
+		6ACD587B1B298E9E00FF454C /* AROverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AROverlayView.m; sourceTree = "<group>"; };
+		6ACD587C1B298E9E00FF454C /* ARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSettings.h; sourceTree = "<group>"; };
+		6ACD587E1B298E9E00FF454C /* ar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_icon.png; sourceTree = "<group>"; };
+		6ACD587F1B298E9E00FF454C /* ar_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay.png; sourceTree = "<group>"; };
+		6ACD58801B298E9E00FF454C /* ar_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ar_overlay@2x.png"; sourceTree = "<group>"; };
+		6ACD58811B298E9E00FF454C /* Radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radar.png; sourceTree = "<group>"; };
+		6ACD58821B298E9E00FF454C /* RadarMV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RadarMV.png; sourceTree = "<group>"; };
+		6ACD58841B298E9E00FF454C /* ARRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRadar.h; sourceTree = "<group>"; };
+		6ACD58851B298E9E00FF454C /* ARRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRadar.m; sourceTree = "<group>"; };
+		6ACD58861B298E9E00FF454C /* ARRadar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARRadar.xib; sourceTree = "<group>"; };
+		6ACD58871B298E9E00FF454C /* LocationMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMath.h; sourceTree = "<group>"; };
+		6ACD58881B298E9E00FF454C /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
+		6ACD58891B298E9E00FF454C /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
+		6ACD588A1B298E9E00FF454C /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
 		CB23E47C42D742E9A50498CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,7 +140,7 @@
 				36CB213818E480E7000483F2 /* ViewController.h */,
 				36CB213918E480E7000483F2 /* ViewController.m */,
 				36CB216318E48338000483F2 /* Media.xcassets */,
-				36CB218918E49992000483F2 /* Classes */,
+				6ACD58761B298E9E00FF454C /* Classes */,
 				36CB212A18E480E7000483F2 /* Supporting Files */,
 			);
 			path = "PRAR-Simple";
@@ -185,56 +175,50 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
-		36CB218918E49992000483F2 /* Classes */ = {
+		6ACD58761B298E9E00FF454C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				36CB219018E49992000483F2 /* ARSettings.h */,
-				36CB219D18E49992000483F2 /* PRARManager.h */,
-				36CB219E18E49992000483F2 /* PRARManager.m */,
-				36CB218A18E49992000483F2 /* AR */,
-				36CB219118E49992000483F2 /* Graphics */,
-				36CB219718E49992000483F2 /* Location */,
+				6ACD58771B298E9E00FF454C /* AR */,
+				6ACD587C1B298E9E00FF454C /* ARSettings.h */,
+				6ACD587D1B298E9E00FF454C /* Graphics */,
+				6ACD58831B298E9E00FF454C /* Location */,
+				6ACD58891B298E9E00FF454C /* PRARManager.h */,
+				6ACD588A1B298E9E00FF454C /* PRARManager.m */,
 			);
-			name = Classes;
-			path = ../../Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		36CB218A18E49992000483F2 /* AR */ = {
+		6ACD58771B298E9E00FF454C /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				36CB218B18E49992000483F2 /* ARController.h */,
-				36CB218C18E49992000483F2 /* ARController.m */,
-				36CB218D18E49992000483F2 /* ARObject.h */,
-				36CB218E18E49992000483F2 /* ARObject.m */,
-				36CB218F18E49992000483F2 /* ARObject.xib */,
+				6ACD58781B298E9E00FF454C /* ARController.h */,
+				6ACD58791B298E9E00FF454C /* ARController.m */,
+				6ACD587A1B298E9E00FF454C /* AROverlayView.h */,
+				6ACD587B1B298E9E00FF454C /* AROverlayView.m */,
 			);
 			path = AR;
 			sourceTree = "<group>";
 		};
-		36CB219118E49992000483F2 /* Graphics */ = {
+		6ACD587D1B298E9E00FF454C /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				6AC29CC01B25DE320023F0F4 /* scheme_labelContainerTop.png */,
-				6AC29CBE1B25DE2A0023F0F4 /* scheme_labelContainerBottom.png */,
-				6AC29CBC1B25DE1E0023F0F4 /* scheme_labelContainerBody.png */,
-				6AC29CBA1B25DE080023F0F4 /* scheme_arrow@2x.png */,
-				36CB219218E49992000483F2 /* ar_icon.png */,
-				36CB219318E49992000483F2 /* ar_overlay.png */,
-				36CB219418E49992000483F2 /* ar_overlay@2x.png */,
-				36CB219518E49992000483F2 /* Radar.png */,
-				36CB219618E49992000483F2 /* RadarMV.png */,
+				6ACD587E1B298E9E00FF454C /* ar_icon.png */,
+				6ACD587F1B298E9E00FF454C /* ar_overlay.png */,
+				6ACD58801B298E9E00FF454C /* ar_overlay@2x.png */,
+				6ACD58811B298E9E00FF454C /* Radar.png */,
+				6ACD58821B298E9E00FF454C /* RadarMV.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
 		};
-		36CB219718E49992000483F2 /* Location */ = {
+		6ACD58831B298E9E00FF454C /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				36CB219818E49992000483F2 /* ARRadar.h */,
-				36CB219918E49992000483F2 /* ARRadar.m */,
-				36CB219A18E49992000483F2 /* ARRadar.xib */,
-				36CB219B18E49992000483F2 /* LocationMath.h */,
-				36CB219C18E49992000483F2 /* LocationMath.m */,
+				6ACD58841B298E9E00FF454C /* ARRadar.h */,
+				6ACD58851B298E9E00FF454C /* ARRadar.m */,
+				6ACD58861B298E9E00FF454C /* ARRadar.xib */,
+				6ACD58871B298E9E00FF454C /* LocationMath.h */,
+				6ACD58881B298E9E00FF454C /* LocationMath.m */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -291,31 +275,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */,
 				36CB218318E4861B000483F2 /* launch.png in Resources */,
-				6AC29CBD1B25DE1E0023F0F4 /* scheme_labelContainerBody.png in Resources */,
 				36CB217A18E48447000483F2 /* logo114.png in Resources */,
 				36CB217B18E48447000483F2 /* logo120.png in Resources */,
 				36CB216F18E483C6000483F2 /* logo57.png in Resources */,
-				6AC29CBB1B25DE080023F0F4 /* scheme_arrow@2x.png in Resources */,
+				6ACD58911B298E9E00FF454C /* RadarMV.png in Resources */,
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
-				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
+				6ACD588E1B298E9E00FF454C /* ar_overlay.png in Resources */,
 				36CB217818E48447000483F2 /* logo58.png in Resources */,
 				36CB216C18E483C6000483F2 /* logo29.png in Resources */,
+				6ACD58931B298E9E00FF454C /* ARRadar.xib in Resources */,
+				6ACD58901B298E9E00FF454C /* Radar.png in Resources */,
 				36CB216D18E483C6000483F2 /* logo40.png in Resources */,
 				36CB217918E48447000483F2 /* logo80.png in Resources */,
-				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
-				36CB21A118E49992000483F2 /* ARObject.xib in Resources */,
-				6AC29CBF1B25DE2A0023F0F4 /* scheme_labelContainerBottom.png in Resources */,
 				36CB217018E483C6000483F2 /* logo60.png in Resources */,
 				36CB216418E48338000483F2 /* Media.xcassets in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
-				36CB21A518E49992000483F2 /* Radar.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
-				6AC29CC11B25DE320023F0F4 /* scheme_labelContainerTop.png in Resources */,
-				36CB21A318E49992000483F2 /* ar_overlay.png in Resources */,
+				6ACD588F1B298E9E00FF454C /* ar_overlay@2x.png in Resources */,
+				6ACD588D1B298E9E00FF454C /* ar_icon.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
-				36CB21A618E49992000483F2 /* RadarMV.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36CB21AA18E49992000483F2 /* PRARManager.m in Sources */,
-				36CB21A018E49992000483F2 /* ARObject.m in Sources */,
-				36CB219F18E49992000483F2 /* ARController.m in Sources */,
+				6ACD58951B298E9E00FF454C /* PRARManager.m in Sources */,
+				6ACD588B1B298E9E00FF454C /* ARController.m in Sources */,
 				36CB213A18E480E8000483F2 /* ViewController.m in Sources */,
-				36CB21A718E49992000483F2 /* ARRadar.m in Sources */,
 				36CB213418E480E7000483F2 /* AppDelegate.m in Sources */,
+				6ACD58921B298E9E00FF454C /* ARRadar.m in Sources */,
+				6ACD588C1B298E9E00FF454C /* AROverlayView.m in Sources */,
 				36CB213018E480E7000483F2 /* main.m in Sources */,
-				36CB21A918E49992000483F2 /* LocationMath.m in Sources */,
+				6ACD58941B298E9E00FF454C /* LocationMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

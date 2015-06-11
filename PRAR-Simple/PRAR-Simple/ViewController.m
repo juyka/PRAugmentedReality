@@ -7,14 +7,18 @@
 //
 
 #import "ViewController.h"
-
 #include <stdlib.h>
 
+#import "PRARManager.h"
+
+#import "AROverlayView.h"
 
 #define NUMBER_OF_POINTS    20
 
+@interface ViewController() <PRARManagerDelegate>
 
-@interface ViewController ()
+@property (nonatomic) PRARManager *prARManager;
+@property (nonatomic, weak) IBOutlet UIView *loadingView;
 
 @end
 
@@ -23,7 +27,6 @@
 
 
 - (void)alert:(NSString*)title withDetails:(NSString*)details {
-    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:details
                                                    delegate:nil
@@ -32,29 +35,27 @@
     [alert show];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Initialize the manager so it wakes up (can do this anywhere you want
-    [PRARManager sharedManagerWithRadarAndSize:self.view.frame.size andDelegate:self];
+    // Initialize the manager so it wakes up (can do this anywhere you want)
+    self.prARManager = [[PRARManager alloc] initWithSize:self.view.frame.size
+                                                delegate:self
+                                       shouldCreateRadar:YES];
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    // Initialize your current location as 0,0 (since it works with our randomly generated locations)
-    CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(0, 0);
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    [[PRARManager sharedManager] startARWithData:[self getDummyData]
-                                     forLocation:locationCoordinates];
+    [self.prARManager startARWithData:[self getDummyData] forLocation:CLLocationCoordinate2DMake(55.851740, 37.492774)];
 }
 
 
 #pragma mark - Dummy AR Data
 
 // Creates data for `NUMBER_OF_POINTS` AR Objects
--(NSArray*)getDummyData
-{
+-(NSArray*)getDummyData {
+    
     NSArray *arData = @[@{
                             @"id": @(0),
                             @"title": @"Цирк",
@@ -80,18 +81,16 @@
                             @"lon": @(37.493713)
                             }
                         ];
-    return arData;
-//    NSMutableArray *points = [NSMutableArray arrayWithCapacity:NUMBER_OF_POINTS];
-//    
-//    srand48(time(0));
-//    for (int i=0; i<NUMBER_OF_POINTS; i++)
-//    {
-//        CLLocationCoordinate2D pointCoordinates = [self getRandomLocation];
-//        NSDictionary *point = [self createPointWithId:i at:pointCoordinates];
-//        [points addObject:point];
-//    }
-//    
-//    return [NSArray arrayWithArray:points];
+    
+    NSMutableArray *points = [NSMutableArray arrayWithCapacity:NUMBER_OF_POINTS];
+    
+    srand48(time(0));
+    for (int i=0; i<arData.count; i++) {
+        CLLocationCoordinate2D coordinates = CLLocationCoordinate2DMake([arData[i][@"lat"] doubleValue], [arData[i][@"lon"] doubleValue]);
+        [points addObject:[self createPointAtLocation:coordinates]];
+    }
+    
+    return [NSArray arrayWithArray:points];
 }
 
 // Returns a random location
@@ -108,43 +107,52 @@
 }
 
 // Creates the Data for an AR Object at a given location
--(NSDictionary*)createPointWithId:(int)the_id at:(CLLocationCoordinate2D)locCoordinates
+-(AROverlayView*)createPointAtLocation:(CLLocationCoordinate2D)locCoordinates
 {
-    NSDictionary *point = @{
-                            @"id" : @(the_id),
-                            @"title" : [NSString stringWithFormat:@"Place Num %d", the_id],
-                            @"lon" : @(locCoordinates.longitude),
-                            @"lat" : @(locCoordinates.latitude)
-                           };
-    return point;
+    static int i = 0;
+    
+    AROverlayView *overlay = [[AROverlayView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 100.0f, 100.0f)];
+    overlay.backgroundColor = [UIColor blueColor];
+    overlay.coordinates = locCoordinates;
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:overlay.bounds];
+    [button addTarget:self action:@selector(overlayTouchedUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    button.tag = i;
+    button.titleLabel.numberOfLines = 0;
+    [button setTitle:[NSString stringWithFormat:@"%.f meters", [overlay distanceFromLocation:CLLocationCoordinate2DMake(55.851740, 37.492774)]] forState:UIControlStateNormal];
+    [overlay addSubview:button];
+    
+    i++;
+    
+    return overlay;
 }
 
+- (void)overlayTouchedUpInside:(UIButton*)button {
+    NSLog(@"Button %i pressed", button.tag);
+}
 
 #pragma mark - PRARManager Delegate
 
--(void)prarDidSetupAR:(UIView *)arView withCameraLayer:(AVCaptureVideoPreviewLayer *)cameraLayer andRadarView:(UIView *)radar
-{
+- (void)augmentedRealityManagerDidSetup:(PRARManager *)arManager {
     NSLog(@"Finished displaying ARObjects");
     
-    [self.view.layer addSublayer:cameraLayer];
-    [self.view addSubview:arView];
+    [self.view.layer addSublayer:(CALayer*)arManager.cameraLayer];
+    [self.view addSubview:arManager.arOverlaysContainerView];
     
-    [self.view bringSubviewToFront:[self.view viewWithTag:AR_VIEW_TAG]];
+    if (arManager.radarView) {
+        [self.view addSubview:(UIView*)arManager.radarView];
+    }
     
-    [self.view addSubview:radar];
-    
-    [loadingV setHidden:YES];
+    [self.loadingView setHidden:YES];
 }
 
--(void)prarUpdateFrame:(CGRect)arViewFrame
-{
-    [[self.view viewWithTag:AR_VIEW_TAG] setFrame:arViewFrame];
+- (void)augmentedRealityManager:(PRARManager *)arManager didUpdateARFrame:(CGRect)frame {
+    [arManager.arOverlaysContainerView setFrame:frame];
 }
 
--(void)prarGotProblem:(NSString *)problemTitle withDetails:(NSString *)problemDetails
-{
-    [loadingV setHidden:YES];
-    [self alert:problemTitle withDetails:problemDetails];
+- (void)augmentedRealityManager:(PRARManager *)arManager didReportError:(NSError *)error {
+    [self.loadingView setHidden:YES];
+    [self alert:@"Error" withDetails:[error localizedDescription]];
 }
 
 @end

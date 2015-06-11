@@ -27,14 +27,17 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface ARController : NSObject
-{
-    NSMutableDictionary *geoobjectOverlays;
-    NSMutableDictionary *geoobjectPositions;
-    NSMutableDictionary *geoobjectVerts;
-}
+@class LocationMath;
 
--(NSDictionary*)buildAROverlaysForData:(NSArray*)arData andLocation:(CLLocationCoordinate2D)newLocation;
--(NSArray*)createRadarSpots;
+@interface ARController : NSObject
+
+@property (nonatomic) NSArray *overlayViews;
+@property (nonatomic) CLLocationCoordinate2D userCoordinate;
+
+@property (nonatomic, strong) LocationMath *locationMath;
+
+- (NSArray*)radarSpots;
+
+- (void)reloadData;
 
 @end

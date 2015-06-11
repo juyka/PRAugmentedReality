@@ -10,8 +10,5 @@
 #import "PRARManager.h"
 
 @interface ViewController : UIViewController <PRARManagerDelegate>
-{
-    IBOutlet UIView *loadingV;
-}
 
 @end
